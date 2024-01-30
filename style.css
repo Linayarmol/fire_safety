@@ -1,0 +1,816 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  user-select: none;
+}
+
+header {
+  background: linear-gradient(45deg, #ff9640, #ae3113);
+}
+.container {
+  width: 80%;
+  margin: auto;
+  height: 100%;
+}
+header .container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.logo {
+  display: flex;
+  align-items: center;
+}
+.logo img {
+  padding: 5px 0;
+  width: 5vw;
+}
+
+.logo h2 {
+  color: #571100;
+  margin-left: 10px;
+  font-size: 3vw;
+  line-height: 24px;
+  margin: 0;
+  margin-left: 5px;
+}
+.menu {
+  display: flex;
+  justify-content: space-between;
+  width: 50%;
+}
+.menu p {
+  color: #571100;
+  text-decoration: none;
+  font-size: 1.5vw;
+  margin-bottom: 0 !important;
+}
+
+.menu a {
+  list-style: none;
+  text-decoration: none;
+}
+.rescure {
+  background-image: url(img/фото.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 60vw;
+  background-position: center;
+}
+.rescure .container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.rescure__text h1 {
+  font-size: 6vw;
+  color: #f9eed2;
+  line-height: 8vh;
+}
+.rescure__text p {
+  font-size: 2.5vw;
+  color: #f9eed2;
+}
+.theme {
+  margin: 5% 0;
+}
+.theme .container {
+  text-align: center;
+}
+.theme .container h1 {
+  color: #571100;
+  font-size: 4vw;
+}
+.theme .container p {
+  color: #817474;
+  font-size: 2vw;
+}
+.cards {
+  width: 100%;
+  height: fit-content;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  margin-top: 40px;
+}
+.card1 {
+  min-width: 300px;
+  width: 35%;
+  margin-bottom: 20px;
+  box-shadow: 16px 16px 48px rgba(255, 150, 64, 0.199);
+  border-radius: 3px;
+}
+.card1 h2 {
+  color: #571100;
+  margin: 7px 0;
+}
+.theme .container .card1 p {
+  font-size: 15px;
+}
+.theme .container .card1 img {
+  margin-top: 15px;
+}
+.card1:hover {
+  background-color: rgba(209, 122, 51, 0.24);
+}
+.card2 {
+  min-width: 300px;
+  width: 35%;
+  box-shadow: 16px 16px 48px rgba(255, 150, 64, 0.199);
+  border-radius: 3px;
+  margin-bottom: 20px;
+}
+.card2 h2 {
+  color: #571100;
+  margin: 7px 0;
+}
+.theme .container .card2 p {
+  font-size: 15px;
+}
+.theme .container .card2 img {
+  margin-top: 15px;
+}
+.card2:hover {
+  background-color: rgba(209, 122, 51, 0.24);
+}
+.card3 {
+  min-width: 300px;
+  width: 35%;
+  box-shadow: 16px 16px 48px rgba(255, 150, 64, 0.199);
+  border-radius: 3px;
+  margin-bottom: 20px;
+}
+.card3 h2 {
+  color: #571100;
+  margin: 7px 0;
+}
+.theme .container .card3 p {
+  font-size: 15px;
+}
+.theme .container .card3 img {
+  margin-top: 15px;
+}
+.card3:hover {
+  background-color: rgba(209, 122, 51, 0.24);
+}
+.card4 {
+  min-width: 300px;
+  width: 35%;
+  box-shadow: 16px 16px 48px rgba(255, 150, 64, 0.199);
+  border-radius: 3px;
+  margin-bottom: 20px;
+}
+.card4 h2 {
+  color: #571100;
+  margin: 7px 0;
+}
+.theme .container .card4 p {
+  font-size: 15px;
+}
+.theme .container .card4 img {
+  margin-top: 15px;
+}
+.card4:hover {
+  background-color: rgba(209, 122, 51, 0.24);
+}
+.how,
+.test {
+  background-color: #ffefe2;
+  padding: 100px 0;
+  padding-top: 15%;
+}
+.how__pioneer,
+.test__pioneer {
+  height: 500px;
+  width: 500px;
+  position: relative;
+}
+.back {
+  background: linear-gradient(45deg, #ff9640, #ae3113);
+  height: 400px;
+  width: 400px;
+}
+.how__pioneer img,
+.test__pioneer img {
+  width: 400px;
+  height: 400px;
+  position: absolute;
+  top: -21px;
+  right: 80px;
+}
+.how .container,
+.test .container {
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+}
+.how__text h1,
+.test__text h1 {
+  color: #571100;
+  font-size: 40px;
+}
+.how__text p,
+.test__text p {
+  color: #571100;
+  padding: 20px 0;
+  font-size: 20px;
+}
+.how__text p[name="lyceum"],
+.test__text p[name="lyceum"] {
+  color: #817474;
+  padding: 0;
+  padding: 0 0 20px 0;
+}
+.how__text button,
+.test__text button {
+  border-radius: 50px;
+  background: linear-gradient(45deg, #ff9640, #ae3113);
+  width: 150px;
+  height: 40px;
+  border: 1px solid #ff9640;
+  color: white;
+  font-size: 15px;
+}
+
+.how__text button:hover,
+.test__text button:hover {
+  background: linear-gradient(45deg, #f57f1e, #dd380f);
+}
+.quest {
+  text-align: center;
+  margin: 100px 0;
+}
+.quest h1 {
+  color: #571100;
+  font-size: 70px;
+}
+.quest p {
+  color: #571100;
+  padding-bottom: 20px;
+}
+.quest .rooms {
+  flex-wrap: wrap;
+}
+.quest .rooms img {
+  width: 400px;
+}
+.quest .rooms img[name="1"]:hover {
+  box-shadow: -5px -5px 12px rgba(71, 211, 71, 0.555);
+  width: 420px;
+}
+.quest .rooms img[name="2"]:hover {
+  box-shadow: 5px -5px 12px rgba(83, 97, 226, 0.685);
+  width: 420px;
+}
+.quest .rooms img[name="3"]:hover {
+  width: 420px;
+  box-shadow: -5px 5px 12px skyblue;
+}
+.quest .rooms img[name="4"]:hover {
+  box-shadow: 5px 5px 12px rgb(240, 204, 137);
+  width: 420px;
+}
+.quest .rooms img[name="1"] {
+  padding-right: 5px;
+  padding-bottom: 5px;
+}
+.quest .rooms img[name="2"] {
+  padding-left: 5px;
+  padding-bottom: 5px;
+}
+.quest .rooms img[name="3"] {
+  padding-right: 5px;
+  padding-top: 5px;
+}
+.quest .rooms img[name="4"] {
+  padding-left: 5px;
+  padding-top: 5px;
+}
+footer {
+  background: linear-gradient(45deg, #ff9640, #ae3113);
+  padding: 30px 0;
+}
+footer p {
+  font-size: 2vw;
+}
+footer h1 {
+  font-size: 4vw;
+}
+footer img {
+  width: 5vw;
+}
+footer .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+#fireman {
+  display: flex;
+  align-items: center;
+}
+.fireman {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.fireman p {
+  padding-bottom: 5px;
+}
+
+.ambulance {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.gasservice {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.close {
+  border: 3px solid white;
+  width: 32px;
+  height: 32px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 16px;
+  text-align: center;
+  border-radius: 50%;
+  background-color: transparent;
+  font-size: 18px;
+  font-weight: bold;
+  color: white;
+  margin-right: -16px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.popup__overflow {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background-color: rgb(236, 154, 76);
+  opacity: 0.7;
+}
+.popup__container {
+  display: none;
+}
+.popup {
+  background-color: white;
+  padding: 30px;
+  box-shadow: 0 0 30px #333;
+}
+.popup__wrapper {
+  position: fixed;
+  display: flex;
+  align-items: flex-end;
+  flex-direction: column;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 10;
+}
+iframe {
+  width: 70vw;
+  height: 70vh;
+}
+[type="button"]:not(:disabled),
+[type="reset"]:not(:disabled),
+[type="submit"]:not(:disabled),
+button:not(:disabled) {
+  background-color: antiquewhite;
+}
+.popup {
+  height: 620px;
+  overflow: hidden;
+  overflow-y: scroll;
+}
+/* #accordion-body {
+  text-align: center;
+} */
+.accordion-body img {
+  width: 100%;
+}
+.not {
+  padding-top: 15px;
+}
+
+.preloader {
+  position: fixed;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  overflow: hidden;
+  background: linear-gradient(45deg, #fa9c4f, #af3f23);
+  z-index: 1001;
+}
+
+.preloader__image {
+  position: relative;
+  top: 50%;
+  left: 50%;
+  width: 64px;
+  height: 64px;
+  margin-top: -32px;
+  margin-left: -32px;
+  background: url("img/1200px-Emblem_of_the_Ministry_of_Emergency_Situations_of_Belarus.svg.png")
+    no-repeat 50% 50%;
+  background-size: 100px;
+  animation: preloader__image 2s infinite linear;
+  /*расположение (url) изображения gif и др. параметры*/
+}
+
+.loaded_hiding .preloader {
+  transition: 0.3s opacity;
+  opacity: 0;
+}
+
+.loaded .preloader {
+  display: none;
+}
+
+@keyframes preloader__image {
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.fat {
+  font-weight: bold;
+}
+.upbtn {
+  border-radius: 50%;
+  border: 2px solid #ff9640;
+  background-color: white !important;
+  height: 60px;
+  width: 60px;
+  bottom: 30px;
+  right: 30px;
+  cursor: pointer;
+  background: url("img/icons8-толстая-стрелка-вверх-80.png") no-repeat;
+  background-size: 54px;
+  position: fixed;
+  z-index: 999;
+}
+.btn {
+  display: flex;
+  justify-content: space-evenly;
+}
+.games {
+  margin: 50px 0;
+  display: none;
+}
+.games.show {
+  display: block;
+}
+.games .cards {
+  width: 100%;
+  height: fit-content;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  margin-top: 40px;
+}
+.games .container {
+  text-align: center;
+}
+.games .card1 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-width: 300px;
+  width: 35%;
+  height: 20vh;
+  margin-bottom: 20px;
+  box-shadow: 16px 16px 48px rgba(255, 150, 64, 0.199);
+  border-radius: 3px;
+}
+.games .card1 h2 {
+  color: #571100;
+  margin: 7px 0;
+}
+
+.games .container .card1 img {
+  margin-top: 15px;
+  width: 45px;
+}
+.games .card1:hover {
+  background-color: rgba(209, 122, 51, 0.24);
+}
+.fire {
+  display: none;
+}
+.fire.show1 {
+  align-items: center;
+  margin-bottom: 50px;
+  display: block;
+}
+.help {
+  display: none;
+}
+.help.show2 {
+  align-items: center;
+
+  display: block;
+}
+.nature {
+  display: none;
+}
+.nature.show3 {
+  align-items: center;
+
+  display: block;
+}
+.dog {
+  display: none;
+}
+.dog.show4 {
+  align-items: center;
+  display: block;
+}
+
+.mb-3 {
+  justify-content: center;
+}
+.tab-content > .active {
+  text-align: center;
+}
+.games .card2 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-width: 300px;
+  height: 20vh;
+  width: 35%;
+  box-shadow: 16px 16px 48px rgba(255, 150, 64, 0.199);
+  border-radius: 3px;
+  margin-bottom: 20px;
+}
+.games .card2 h2 {
+  color: #571100;
+  margin: 7px 0;
+}
+.games .container .card2 img {
+  margin-top: 15px;
+  width: 45px;
+}
+.games .card2:hover {
+  background-color: rgba(209, 122, 51, 0.24);
+}
+.games .card3 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-width: 300px;
+  width: 35%;
+  height: 20vh;
+  box-shadow: 16px 16px 48px rgba(255, 150, 64, 0.199);
+  border-radius: 3px;
+  margin-bottom: 20px;
+}
+.games .card3 h2 {
+  color: #571100;
+  margin: 7px 0;
+}
+.games .container .card3 img {
+  margin-top: 15px;
+  width: 45px;
+}
+.games .card3:hover {
+  background-color: rgba(209, 122, 51, 0.24);
+}
+.games .card4 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-width: 300px;
+  width: 35%;
+  height: 20vh;
+  box-shadow: 16px 16px 48px rgba(255, 150, 64, 0.199);
+  border-radius: 3px;
+  margin-bottom: 20px;
+}
+.games .card4 h2 {
+  color: #571100;
+  margin: 7px 0;
+}
+.games .container .card4 img {
+  margin-top: 15px;
+  width: 45px;
+}
+.games .card4:hover {
+  background-color: rgba(209, 122, 51, 0.24);
+}
+.extra1 {
+  padding: 70px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.extra2 img {
+  width: 300px;
+}
+.extra2 {
+  padding: 70px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.extra1 img {
+  width: 300px;
+}
+.extra3 img {
+  width: 300px;
+}
+.extra3 {
+  padding: 70px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.extra4 img {
+  width: 300px;
+}
+.extra4 {
+  padding: 70px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.topull {
+  display: flex;
+  justify-content: space-evenly;
+}
+.topull img {
+  width: 280px;
+  height: 150px;
+}
+.rectangle {
+  display: flex;
+  justify-content: space-evenly;
+}
+.rectangle .list__cell.js__cell {
+  
+  height: 150px;
+}
+/* .list__cell.js__cell:hover {
+  background-color: rgb(170, 170, 170);
+} */
+.picture {
+  display: flex;
+  justify-content: space-evenly;
+}
+.picture img {
+  width: 280px;
+  height: 150px;
+}
+.hide {
+  display: none;
+}
+.hovered {
+  background-color: rgb(214, 206, 210);
+}
+.hero {
+  width: 100%;
+}
+.wrapper {
+  margin: 0 auto;
+}
+.list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin: 100px 20px;
+}
+.list__cell {
+  width: 23%;
+  list-style: none;
+  background-color: rgba(235, 235, 235, 0.603);
+  min-height: 150px;
+}
+.js-card {
+  height: 100%;
+  width: 100%;
+}
+.wrapper button {
+  width: 20%;
+  border-radius: 50px;
+  margin-top: 50px;
+}
+
+@media (max-width: 900px) {
+  .rescure__text h1 {
+    line-height: 5vh;
+  }
+  .logo h2 {
+    line-height: 15px;
+  }
+  .quest .rooms img {
+    padding: 0 !important;
+    padding-top: 5px !important;
+  }
+}
+@media (max-width: 600px) {
+  .rescure__text h1 {
+    line-height: 3vh;
+  }
+  .logo h2 {
+    line-height: 10px;
+  }
+  .quest .rooms img {
+    width: 300px;
+  }
+  .quest .rooms img[name="1"]:hover {
+    width: 350px;
+  }
+  .quest .rooms img[name="2"]:hover {
+    width: 350px;
+  }
+  .quest .rooms img[name="3"]:hover {
+    width: 350px;
+  }
+  .quest .rooms img[name="4"]:hover {
+    width: 350px;
+  }
+}
+@media (max-width: 650px) {
+  .how__pioneer,
+  .test__pioneer {
+    height: 400px;
+    width: 400px;
+  }
+  .back {
+    height: 300px;
+    width: 300px;
+  }
+  .how__pioneer img,
+  .test__pioneer img {
+    height: 300px;
+    width: 300px;
+  }
+}
+@media (max-width: 530px) {
+  .how__pioneer,
+  .test__pioneer {
+    height: 300px;
+    width: 300px;
+  }
+  .back {
+    height: 250px;
+    width: 250px;
+  }
+  .how__pioneer img,
+  .test__pioneer img {
+    height: 250px;
+    width: 250px;
+  }
+}
+@media (max-width: 450px) {
+  .quest .rooms img {
+    width: 270px;
+  }
+  .quest .rooms img[name="1"]:hover {
+    width: 290px;
+  }
+  .quest .rooms img[name="2"]:hover {
+    width: 290px;
+  }
+  .quest .rooms img[name="3"]:hover {
+    width: 290px;
+  }
+  .quest .rooms img[name="4"]:hover {
+    width: 290px;
+  }
+  .how__pioneer,
+  .test__pioneer {
+    height: 250px;
+    width: 250px;
+  }
+  .back {
+    height: 200px;
+    width: 200px;
+  }
+  .how__pioneer img,
+  .test__pioneer img {
+    height: 200px;
+    width: 200px;
+  }
+
+  .how__pioneer img,
+  .test__pioneer img {
+    top: -12px;
+    right: 65px;
+  }
+}
